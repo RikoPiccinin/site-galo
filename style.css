@@ -1,0 +1,124 @@
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 0;
+}
+
+#home {
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#elenco .card img {
+  width: 100%;
+  height: auto;
+  /* mantém proporção */
+  object-fit: cover;
+  /* cobre o card sem distorcer */
+}
+
+#titulos img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+#patrocinadores img {
+  max-height: 90px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+/* Faz 8 colunas por linha */
+.col-md-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+/* Ajuste visual dos cards */
+.card-img-top {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.historia-text {
+  text-align: justify;
+  line-height: 1.8;
+  /* melhora a leitura */
+  font-size: 1.1rem;
+  /* ajusta o tamanho */
+}
+
+footer .container {
+  gap: 20px;
+  /* espaço entre ícones e texto */
+}
+
+
+.foto-card {
+  height: 200px;
+  /* controla a altura */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.foto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* mantém o enquadramento proporcional */
+  transition: transform 0.3s ease;
+}
+
+.foto-card img:hover {
+  transform: scale(1.05);
+  /* efeito leve ao passar o mouse */
+}
+
+#foto-card img:hover {
+  transform: scale(1.05);
+}
+
+#foto-card img {
+  transition: transform 0.3s ease;
+}
+
+/* Ajusta o scroll das seções para não ficar escondido atrás da navbar */
+section {
+  scroll-margin-top: 80px;
+  /* altura aproximada da sua navbar */
+}
+
+/* Caso queira, pode ajustar títulos também */
+section h2 {
+  margin-top: 20px;
+  /* pequeno espaçamento extra visual */
+}
+
