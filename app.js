@@ -48,6 +48,9 @@ app.post("/enviar-email", (req, res) => {
   });
 });
 
+app.post("/enviar", (req, res) => {
+  res.render("contato", { mensagem: "Mensagem enviada com sucesso!" });
+});
 
 
 

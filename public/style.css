@@ -1,107 +1,56 @@
-/* Reset e estilo base */
+
+
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+html {
   scroll-behavior: smooth;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #222;
-  padding: 10px 20px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo img {
-  height: 40px; /* tamanho da logo */
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.navbar a:hover {
-  color: #f39c12;
-}
-
-/* ===== SEÇÕES ===== */
 section {
-  min-height: 100vh;       /* cada seção ocupa a tela inteira */
-  padding: 80px 20px;      /* 80px para não ficar atrás da navbar */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 100px 0;
 }
 
 #home {
-  background: #f1f1f1;
+  background: #f8f9fa;
+  text-align: center;
 }
 
-#historia {
-  background: #ddd;
+#elenco .card img {
+  width: 100%;
+  height: auto;
+  /* mantém proporção */
+  object-fit: cover;
+  /* cobre o card sem distorcer */
 }
 
-#diretoria {
-  background: #bbb;
+#titulos img {
+  width: 50px;
+  margin-right: 10px;
 }
 
-#comissao {
-  background: #999;
-  color: #fff;
+#patrocinadores img {
+  max-height: 90px;
+  border-radius: 5px;
+  object-fit: contain;
 }
 
-#fotos {
-  background: #777;
-  color: #fff;
+footer {
+  margin-top: 40px;
 }
 
-#elenco {
-  background: #555;
-  color: #fff;
-}
-
-#titulo {
-  background: #545;
-  color: #fff;
-}
-
-/* ===== RESPONSIVO ===== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar li {
-    margin: 10px 0;
-  }
-}
 /* Faz 8 colunas por linha */
 .col-md-1-5 {
   flex: 0 0 12.5%;
@@ -114,12 +63,28 @@ section {
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
+
 .card {
   border-radius: 12px;
 }
 
+.historia-text {
+  text-align: justify;
+  line-height: 1.8;
+  /* melhora a leitura */
+  font-size: 1.1rem;
+  /* ajusta o tamanho */
+}
+
+footer .container {
+  gap: 20px;
+  /* espaço entre ícones e texto */
+}
+
+
 .foto-card {
-  height: 200px; /* controla a altura */
+  height: 200px;
+  /* controla a altura */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -127,10 +92,33 @@ section {
 .foto-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* mantém o enquadramento proporcional */
+  object-fit: cover;
+  /* mantém o enquadramento proporcional */
   transition: transform 0.3s ease;
 }
 
 .foto-card img:hover {
-  transform: scale(1.05); /* efeito leve ao passar o mouse */
+  transform: scale(1.05);
+  /* efeito leve ao passar o mouse */
 }
+
+#foto-card img:hover {
+  transform: scale(1.05);
+}
+
+#foto-card img {
+  transition: transform 0.3s ease;
+}
+
+/* Ajusta o scroll das seções para não ficar escondido atrás da navbar */
+section {
+  scroll-margin-top: 80px;
+  /* altura aproximada da sua navbar */
+}
+
+/* Caso queira, pode ajustar títulos também */
+section h2 {
+  margin-top: 20px;
+  /* pequeno espaçamento extra visual */
+}
+
