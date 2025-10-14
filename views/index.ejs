@@ -102,6 +102,18 @@
         #foto-card img {
             transition: transform 0.3s ease;
         }
+
+        /* Ajusta o scroll das seções para não ficar escondido atrás da navbar */
+        section {
+            scroll-margin-top: 80px;
+            /* altura aproximada da sua navbar */
+        }
+
+        /* Caso queira, pode ajustar títulos também */
+        section h2 {
+            margin-top: 20px;
+            /* pequeno espaçamento extra visual */
+        }
     </style>
 </head>
 
@@ -120,7 +132,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#historia">Nossa História</a></li>
                     <li class="nav-item"><a class="nav-link" href="#diretoria">Diretoria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#comissao">Comissão Técnica</a></li>
@@ -145,47 +157,53 @@
         <!-- Foto da fachada -->
         <img src="/fachada.png" alt="Fachada do clube" class="mt-4"
             style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-    
+
     </section>
 
-     <section id="noticias" class="bg-dark bg-opacity-10 py-5">
+    <section id="noticias" class="bg-dark bg-opacity-10 py-5">
         <div class="container text-center">
             <h2 class="mb-4">Notícias</h2>
             <div class="row g-4">
                 <!-- Card 1 -->
-                <div class="col-md-4"  id="foto-card">
-                    <a href="https://ge.globo.com/sp/campinas-e-regiao/futebol/noticia/2025/08/16/atacante-colombiano-busca-acesso-em-sp-apos-chegar-ao-brasil-com-r-20-e-levar-golpe.ghtml" target="_blank" class="text-decoration-none text-dark">
+                <div class="col-md-4" id="foto-card">
+                    <a href="https://ge.globo.com/sp/campinas-e-regiao/futebol/noticia/2025/08/16/atacante-colombiano-busca-acesso-em-sp-apos-chegar-ao-brasil-com-r-20-e-levar-golpe.ghtml"
+                        target="_blank" class="text-decoration-none text-dark">
                         <div class="card shadow h-100">
                             <img src="/image.png" class="card-img-top" alt="globo.com">
                             <div class="card-body">
                                 <h5 class="card-title">"Deixei tudo na Colômbia pelo meu grande sonho"</h5>
-                                <p class="card-text">Atacante colombiano busca acesso em SP após chegar ao Brasil com R$ 20 e levar golpe</p>
+                                <p class="card-text">Atacante colombiano busca acesso em SP após chegar ao Brasil com R$
+                                    20 e levar golpe</p>
                             </div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-4"  id="foto-card" >
-                    <a href="https://www.futebolinterior.com.br/independente-quase-chegou-na-segundona/" target="_blank" class="text-decoration-none text-dark">
+                <div class="col-md-4" id="foto-card">
+                    <a href="https://www.futebolinterior.com.br/independente-quase-chegou-na-segundona/" target="_blank"
+                        class="text-decoration-none text-dark">
                         <div class="card shadow h-100">
                             <img src="/image1.png" class="card-img-top" alt="Futebol Interior">
                             <div class="card-body">
                                 <h5 class="card-title">Independente chega muito perto do acesso na Segundona</h5>
-                                <p class="card-text">Foram 16 jogos disputados, com seis vitórias, três empates e seis derrotas, somando 21 pontos na campanha geral</p>
+                                <p class="card-text">Foram 16 jogos disputados, com seis vitórias, três empates e seis
+                                    derrotas, somando 21 pontos na campanha geral</p>
                             </div>
                         </div>
                     </a>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-4"  id="foto-card">
-                    <a href="https://paulistacup.com.br/campeonatos/8161-paulista-cup---sub-20" target="_blank" class="text-decoration-none text-dark">
+                <div class="col-md-4" id="foto-card">
+                    <a href="https://paulistacup.com.br/campeonatos/8161-paulista-cup---sub-20" target="_blank"
+                        class="text-decoration-none text-dark">
                         <div class="card shadow h-100">
                             <img src="/image2.png" class="card-img-top" alt="Notícia 3">
                             <div class="card-body">
                                 <h5 class="card-title">Veja tudo sobre a Paulista Cup Sub-20</h5>
-                                <p class="card-text">Confira a tabela e os jogos da competição que nosso time Sub-20 está jogando.</p>
+                                <p class="card-text">Confira a tabela e os jogos da competição que nosso time Sub-20
+                                    está jogando.</p>
                             </div>
                         </div>
                     </a>
@@ -260,7 +278,7 @@
                 A4.</p>
         </div>
     </section>
-   
+
 
 
 
@@ -587,7 +605,7 @@
 
 
 
-            <section id="patrocinadores" >
+            <section id="patrocinadores">
                 <div class="container text-center">
                     <h2 class="mb-4">Patrocinadores</h2>
                     <br>
