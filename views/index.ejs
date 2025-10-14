@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEPENDENTE FC</title>
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        #home {
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        #elenco .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #titulos img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        #patrocinadores img {
+            max-height: 90px;
+            border-radius: 5px;
+            object-fit: contain;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+
+        /* Faz 8 colunas por linha */
+        .col-md-1-5 {
+            flex: 0 0 12.5%;
+            max-width: 12.5%;
+        }
+
+        /* Ajuste visual dos cards */
+        .card-img-top {
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card {
+            border-radius: 12px;
+        }
+
+        .historia-text {
+            text-align: justify;
+            line-height: 1.8;
+            /* melhora a leitura */
+            font-size: 1.1rem;
+            /* ajusta o tamanho */
+        }
+
+        footer .container {
+            gap: 20px;
+            /* espaço entre ícones e texto */
+        }
+
+
+        .foto-card {
+            height: 200px;
+            /* controla a altura */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .foto-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* mantém o enquadramento proporcional */
+            transition: transform 0.3s ease;
+        }
+
+        .foto-card img:hover {
+            transform: scale(1.05);
+            /* efeito leve ao passar o mouse */
+        }
+
+        #foto-card img:hover {
+            transform: scale(1.05);
+        }
+
+        #foto-card img {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="/logo.png" alt="Logo" height="40">
+                Independente FC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="#historia">Nossa História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diretoria">Diretoria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comissao">Comissão Técnica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#titulos">Títulos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seções -->
+
+    <section id="home" class="text-center">
+        <!-- Logo no topo -->
+        <img src="/logo.png" alt="Logo do time" class="mb-3" style="width:120px;">
+
+        <!-- Título e descrição -->
+        <h1 class="display-4">Bem-vindo ao Site do Galo</h1>
+        <p class="lead">Site oficial!</p>
+
+        <!-- Foto da fachada -->
+        <img src="/fachada.png" alt="Fachada do clube" class="mt-4"
+            style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    
+    </section>
+
+     <section id="noticias" class="bg-dark bg-opacity-10 py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Notícias</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4"  id="foto-card">
+                    <a href="https://ge.globo.com/sp/campinas-e-regiao/futebol/noticia/2025/08/16/atacante-colombiano-busca-acesso-em-sp-apos-chegar-ao-brasil-com-r-20-e-levar-golpe.ghtml" target="_blank" class="text-decoration-none text-dark">
+                        <div class="card shadow h-100">
+                            <img src="/image.png" class="card-img-top" alt="globo.com">
+                            <div class="card-body">
+                                <h5 class="card-title">"Deixei tudo na Colômbia pelo meu grande sonho"</h5>
+                                <p class="card-text">Atacante colombiano busca acesso em SP após chegar ao Brasil com R$ 20 e levar golpe</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4"  id="foto-card" >
+                    <a href="https://www.futebolinterior.com.br/independente-quase-chegou-na-segundona/" target="_blank" class="text-decoration-none text-dark">
+                        <div class="card shadow h-100">
+                            <img src="/image1.png" class="card-img-top" alt="Futebol Interior">
+                            <div class="card-body">
+                                <h5 class="card-title">Independente chega muito perto do acesso na Segundona</h5>
+                                <p class="card-text">Foram 16 jogos disputados, com seis vitórias, três empates e seis derrotas, somando 21 pontos na campanha geral</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4"  id="foto-card">
+                    <a href="https://paulistacup.com.br/campeonatos/8161-paulista-cup---sub-20" target="_blank" class="text-decoration-none text-dark">
+                        <div class="card shadow h-100">
+                            <img src="/image2.png" class="card-img-top" alt="Notícia 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Veja tudo sobre a Paulista Cup Sub-20</h5>
+                                <p class="card-text">Confira a tabela e os jogos da competição que nosso time Sub-20 está jogando.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="historia" class="bg-light">
+        <div class="container  text-center">
+            <h2 class="mb-4">Nossa História</h2>
+            <p class="historia-text">O Independente Futebol Clube foi fundado no dia 19 de janeiro de 1944 como uma
+                equipe de futebol amador.
+                Antes de se profissionalizar, a equipe venceu seis vezes o Campeonato Amador de Limeira, em 1958, 1962,
+                1965, 1967, 1969 e 1971. Além disso, foi tricampeão da Taça Cidade de Limeira, em 1963, 1964 e 1965 e
+                ficou com a posse definitiva da taça.
+
+                Ainda antes de disputar os torneios profissionais, o Independente ganhou o apelido que carrega até hoje:
+                Galo da Vila Esteves – bairro onde está localizada a sede do clube e alusão ao uniforme, igual ao do
+                Atlético Mineiro, que já carregava o mesmo apelido.
+
+                No escudo, apenas uma alteração ao longo de sua história: a letra “I” inserida em um círculo foi
+                substituída por outro muito parecido com o atual, criado em meados de 1960. Posteriormente, somente
+                pequenas mudanças, com a alteração apenas na década de 1970, quando um galo foi introduzido,
+                inicialmente, ao brasão. Depois, o galo foi inserido no contorno inferior do escudo, que perdura até
+                hoje.
+
+                O Independente participou pela primeira vez de uma competição organizada pela Federação Paulista de
+                Futebol três décadas depois de sua fundação, em 1972, ano em que se tornou profissional. Disputou o
+                Campeonato da Segunda Divisão (atual Série A3) e foi campeão deste torneio no ano seguinte, em 1973,
+                conseguindo o acesso à Divisão Intermediária do Futebol Paulista (atual Série A2). Desde então, o time
+                de Limeira participa, todos os anos, de alguma competição organizada pela FPF.
+
+                No entanto, em 1974, o clube não pôde disputar a Divisão Intermediária, em função de seu estádio
+                comportar apenas cerca de duas mil pessoas. Mas em 1975, para atender às exigências da Federação
+                Paulista de Futebol, o clube iniciou uma campanha popular para construir as arquibancadas do estádio
+                municipal Agostinho Prada, o Pradão, em Limeira, aumentando sua capacidade para 10 mil lugares. Só assim
+                pôde disputar o Campeonato da Divisão Intermediária.
+
+                Em 1984, a equipe foi rebaixada para a Segunda Divisão e um novo acesso foi conquistado quatro anos
+                depois, quando terminou o campeonato em segundo lugar, em 1988, e adquiriu novamente o direito de
+                disputar a Divisão Intermediária de 1989.
+
+                Em 1991, conquistou o Torneio Inicio da Divisão Intermediária da FPF e foi vice-campeão Paulista da
+                Divisão Intermediária. Porém, em 1992, foi rebaixado novamente para a Segunda Divisão, onde permaneceu
+                até 1998. Em 1999, foi campeão da Série B-1 do Campeonato Paulista, adquirindo o acesso à Série A-3 do
+                Estadual. Em 2007, um importante título: o da Copa Energil C, na final contra o Flamengo de Guarulhos.
+
+                Na temporada de 2009, o clube chegou aos seus 65 anos de existência e, na Série B do Campeonato
+                Paulista, não conseguiu passar à segunda fase.
+
+                Em 2011, disputou o Campeonato Paulista da Série B, obtendo o acesso à série A-3 ao vencer a partida
+                contra o Primeira Camisa no dia 23 de outubro de 2011 (4 x 0) e sendo campeão desta série ao vencer o
+                Capivariano.
+
+                O ano de 2014 foi especial para o Independente. Pela primeira vez em sua história, tomou o lugar da
+                Internacional como a equipe mais forte de Limeira e irá pela primeira vez disputar um campeonato com uma
+                divisão acima de seu rival. O Galo subiu para a Série A-2 do Paulista,batendo a mesma Internacional
+                por 3 a 1 e terminou em primeiro de seu grupo. Acabou atropelado pelo Grêmio Novorizontino na grande
+                final e acabou com o vice-campeonato da Série A-3.
+
+                Em outubro de 2015 o Independente contratou o técnico e ex-jogador Jamelli para comandar o time na Série
+                A2 do Campeonato Paulista.
+
+                No dia 1 de maio de 2019 acontecia o gol mais rápido da história do clube, com 15 segundos, foi marcado
+                por Lucas Marques ou mais conhecido como Lucas Paulista no clássico contra o União Barbarense pela Série
+                A4.</p>
+        </div>
+    </section>
+   
+
+
+
+    <section id="diretoria" class="bg-dark bg-opacity-10 py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Diretoria</h2>
+            <p><strong>PRESIDENTE:</strong> João Silva</p>
+            <p><strong>VICE-PRESIDENTE:</strong> Maria Souza</p>
+            <p><strong>DIRETOR DE FUTEBOL:</strong> Carlos Lima</p>
+        </div>
+    </section>
+
+
+    <section id="comissao" class="bg-light py-5">
+        <div class="container  text-center">
+            <h2 class="mb-4">Comissão Técnica</h2>
+            <p><strong>TREINADOR: </strong>LÚCIO BORGES</p>
+            <p><strong>AUXILIAR: </strong> ANDRÉ GUILHERME</p>
+            <p><strong>PREPARADOR: </strong>RONALDO TEIXEIRA
+        </div>
+    </section>
+
+
+
+    <section id="fotos" class="bg-dark bg-opacity-10 py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Galeria de Fotos</h2>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img1.png" alt="Foto 1" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img2.png" alt="Foto 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img3.png" alt="Foto 3" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img4.png" alt="Foto 4" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img5.png" alt="Foto 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img6.png" alt="Foto 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/img7.png" alt="Foto 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="foto-card">
+                        <img src="/logo.png" alt="Foto 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="elenco" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Elenco Principal</h2>
+            <div class="row g-3 text-center">
+
+                <!-- Jogador 1 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img01.png" class="card-img-top" alt="Léo Teixeira">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Léo Teixeira</h6>
+                            <p class="card-text"><small>Goleiro</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 2 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img02.png" class="card-img-top" alt="Pedro Santos">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Pedro Santos</h6>
+                            <p class="card-text"><small>Meio-campo</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 3 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img03.png" class="card-img-top" alt="João Silva">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">João Silva</h6>
+                            <p class="card-text"><small>Atacante</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 4 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img04.png" class="card-img-top" alt="Carlos Lima">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Carlos Lima</h6>
+                            <p class="card-text"><small>Zagueiro</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 5 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img05.png" class="card-img-top" alt="Rafael Souza">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Rafael Souza</h6>
+                            <p class="card-text"><small>Lateral</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 6 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img06.png" class="card-img-top" alt="André Costa">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">André Costa</h6>
+                            <p class="card-text"><small>Volante</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 7 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img07.png" class="card-img-top" alt="Lucas Pereira">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Lucas Pereira</h6>
+                            <p class="card-text"><small>Atacante</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 8 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img08.png" class="card-img-top" alt="Thiago Alves">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Thiago Alves</h6>
+                            <p class="card-text"><small>Meio-campo</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 9 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img09.png" class="card-img-top" alt="Gabriel Nunes">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Gabriel Nunes</h6>
+                            <p class="card-text"><small>Goleiro</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 10 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img10.png" class="card-img-top" alt="Diego Martins">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Diego Martins</h6>
+                            <p class="card-text"><small>Zagueiro</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 11 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img11.png" class="card-img-top" alt="Matheus Rocha">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Matheus Rocha</h6>
+                            <p class="card-text"><small>Lateral</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 12 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img12.png" class="card-img-top" alt="Vinícius Lima">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Vinícius Lima</h6>
+                            <p class="card-text"><small>Atacante</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 13 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img13.png" class="card-img-top" alt="Felipe Araújo">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Felipe Araújo</h6>
+                            <p class="card-text"><small>Meio-campo</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 14 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img14.png" class="card-img-top" alt="Ricardo Mendes">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Ricardo Mendes</h6>
+                            <p class="card-text"><small>Zagueiro</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 15 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img15.png" class="card-img-top" alt="Henrique Lopes">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Henrique Lopes</h6>
+                            <p class="card-text"><small>Lateral</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogador 16 -->
+                <div class="col-6 col-md-1-5">
+                    <div class="card shadow-sm h-100" id="foto-card">
+                        <img src="/img16.png" class="card-img-top" alt="Eduardo Silva">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-1">Eduardo Silva</h6>
+                            <p class="card-text"><small>Volante</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <div class="container text-center">
+        <h2 class="mb-4">Elenco Sub-20</h2>
+        <div class="row g-3 text-center">
+
+            <!-- Jogador 1 -->
+            <div class="col-6 col-md-1-5">
+                <div class="card shadow-sm h-100" id="foto-card">
+                    <img src="/img01.png" class="card-img-top" alt="Léo Teixeira">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1">Léo Teixeira</h6>
+                        <p class="card-text"><small>Goleiro</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jogador 2 -->
+            <div class="col-6 col-md-1-5">
+                <div class="card shadow-sm h-100" id="foto-card">
+                    <img src="/img02.png" class="card-img-top" alt="Pedro Santos">
+                    <div class="card-body p-2">
+                        <h6 class="card-title mb-1">Pedro Santos</h6>
+                        <p class="card-text"><small>Meio-campo</small></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <section id="titulos" class="bg-dark bg-opacity-10 py-5">
+                <div class="container text-center">
+                    <h2 class="mb-4">Títulos</h2>
+                    <p>🏆 Campeão Paulista série A3 1973</p>
+                    <p>🏆 Campeão Paulista da Segunda Divisão 1999 e 2011</p>
+                    <p>🏆 Copa Energil C 2007</p>
+                    <p>🏆 Vice Camp. Paulista A3 2014</p>
+                </div>
+            </section>
+
+            <section id="ingressos">
+                <div class="container text-center" id="foto-card">
+                    <h2 class="mb-4">Ingressos</h2>
+                    <p>Compre seu ingresso aqui!</p>
+                    <img src="/logo-ticket.png" style="border-radius: 5px;" alt="Total Ticket"><br><br>
+                    <a href="https://www.totalticket.com.br/evento/" target="_blank"><button
+                            class="btn btn-success">Comprar</button></a>
+
+                </div>
+
+            </section>
+
+            <section class="bg-dark bg-opacity-10">
+                <div class="container text-center" id="foto-card">
+                    <h2 class="mb-4 text-center">Estádio</h2>
+                    <img src="/estadio.jpg" class="img-fluid rounded shadow"><br><br>
+                    <p><b>Endereço:</b> Avenida Maestro Xixirri, 611 - Limeira - SP</p>
+                </div>
+
+            </section>
+
+
+
+            <section id="patrocinadores" >
+                <div class="container text-center">
+                    <h2 class="mb-4">Patrocinadores</h2>
+                    <br>
+                    <div class="row justify-content-center align-items-center g-4">
+                        <div class="col-6 col-md-3" id="foto-card">
+                            <img src="/falafera.png" class="img-fluid" alt="Fala Fera"><br>
+                            <p><a href="https://www.facebook.com/falaferalimeira/" class="btn btn-default"
+                                    target="_blank">Fala
+                                    Fera</a></p>
+                        </div>
+                        <div class="col-6 col-md-3" id="foto-card">
+                            <img src="/cem.jpg" class="img-fluid" alt="Loja Cem">
+                            <p>Loja Cem</p>
+                        </div>
+                        <div class="col-6 col-md-3" id="foto-card">
+                            <img src="/goods.jpg" class="img-fluid" alt="Goods">
+                            <p><a href="https://www.instagram.com/goodslancheslimeira/" class="btn btn-default"
+                                    target="_blank">
+                                    Goods</p></a>
+                        </div>
+                        <div class="col-6 col-md-3" id="foto-card">
+                            <img src="/savenago.png" class="img-fluid" alt="Savenago">
+                            <p><a href="https://www.instagram.com/savenagolimeira/" class="btn btn-default"
+                                    target="_blank">
+                                    Savenago</p></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="bg-dark bg-opacity-10">
+                <div class="container text-center">
+                    <h2 class="text-center mb-5">Fale Conosco</h2>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body p-4">
+
+                                    <div id="alert-msg" class="alert d-none" role="alert"></div>
+
+                                    <form id="form-contato">
+                                        <div class="mb-3">
+                                            <label for="nome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control form-control-lg" id="nome"
+                                                name="nome" placeholder="Seu nome" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">E-mail</label>
+                                            <input type="email" class="form-control form-control-lg" id="email"
+                                                name="email" placeholder="seu@email.com" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="mensagem" class="form-label">Mensagem</label>
+                                            <textarea class="form-control form-control-lg" id="mensagem" name="mensagem"
+                                                rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg w-50">Enviar
+                                                Mensagem</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <footer class="bg-dark text-center text-white py-4">
+                <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="social-links mb-2 mb-md-0">
+                        <a href="https://facebook.com/independentedelimeiraoficial" target="_blank"
+                            class="text-white me-3">
+                            <i class="bi bi-facebook fs-3"></i>
+                        </a>
+                        <a href="https://twitter.com/@IndependenteLimeira" target="_blank" class="text-white me-3">
+                            <i class="bi bi-twitter fs-3"></i>
+                        </a>
+                        <a href="https://instagram.com/independentedelimeiraoficial" target="_blank"
+                            class="text-white me-3">
+                            <i class="bi bi-instagram fs-3"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@IndependenteLimeira" target="_blank" class="text-white">
+                            <i class="bi bi-youtube fs-3"></i>
+                        </a>
+                    </div>
+                    <div class="copyright text-center text-md-end">
+                        &copy; 2025 Independente F.C. Todos os direitos reservados.
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script src="/script.js"></script>
+</body>
+
+</html>

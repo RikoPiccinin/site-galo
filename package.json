@@ -1,0 +1,20 @@
+{
+  "name": "site-galo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "git": "^0.1.5",
+    "nodemailer": "^7.0.6",
+    "nodemon": "^3.1.10",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -1,0 +1,136 @@
+/* Reset e estilo base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo img {
+  height: 40px; /* tamanho da logo */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #f39c12;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  min-height: 100vh;       /* cada seção ocupa a tela inteira */
+  padding: 80px 20px;      /* 80px para não ficar atrás da navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home {
+  background: #f1f1f1;
+}
+
+#historia {
+  background: #ddd;
+}
+
+#diretoria {
+  background: #bbb;
+}
+
+#comissao {
+  background: #999;
+  color: #fff;
+}
+
+#fotos {
+  background: #777;
+  color: #fff;
+}
+
+#elenco {
+  background: #555;
+  color: #fff;
+}
+
+#titulo {
+  background: #545;
+  color: #fff;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}
+/* Faz 8 colunas por linha */
+.col-md-1-5 {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+
+/* Ajuste visual dos cards */
+.card-img-top {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.card {
+  border-radius: 12px;
+}
+
+.foto-card {
+  height: 200px; /* controla a altura */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.foto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém o enquadramento proporcional */
+  transition: transform 0.3s ease;
+}
+
+.foto-card img:hover {
+  transform: scale(1.05); /* efeito leve ao passar o mouse */
+}
