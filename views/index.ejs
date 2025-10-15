@@ -15,11 +15,12 @@
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <img src="/logo.png" alt="Logo" height="40">
+                <img src="/logo.png" alt="Logo" height="30">
                 Independente FC
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -28,23 +29,42 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>                    
+                    <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#historia">Nossa História</a></li>
                     <li class="nav-item"><a class="nav-link" href="#diretoria">Diretoria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#comissao">Comissão Técnica</a></li>
                     <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#titulos">Títulos</a></li>
+
+
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#titulos">Títulos</a></li>
+                            <li><a class="dropdown-item" href="#ingressos">Ingressos</a></li>
+                            <li><a class="dropdown-item" href="#estadio">Estádio</a></li>
+                            <li><a class="dropdown-item" href="#patrocinadores">Patrocínios</a></li>
+                            <li><a class="dropdown-item" href="#faleconosco">Fale Conosco</a></li>
+                            <li><a class="dropdown-item" href="#hino">Hino</a></li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
     <main>
         <!-- Seções -->
 
         <section id="home" class="text-center">
             <!-- Logo no topo -->
-            <img src="/logo.png" alt="Logo do time" class="mb-3" style="width:120px;">
+            <img src="/logo.png" alt="Logo do time" class="mb-3" style="width:130px;">
 
             <!-- Título e descrição -->
             <h1 class="display-4">Bem-vindo ao Site do Galo</h1>
@@ -472,7 +492,7 @@
 
                                 </section>
 
-                                <section class="bg-dark bg-opacity-10">
+                                <section id="estadio" class="bg-dark bg-opacity-10">
                                     <div class="container text-center" id="foto-card">
                                         <h2 class="mb-4 text-center">Estádio</h2>
                                         <img src="/estadio.jpg" class="img-fluid rounded shadow"><br><br>
@@ -516,7 +536,7 @@
 
 
 
-                                <section id="contato" class="bg-dark bg-opacity-10">
+                                <section id="faleconosco" class="bg-dark bg-opacity-10">
                                     <div class="container text-center">
                                         <h2 class="text-center mb-5">Fale Conosco</h2>
 
@@ -565,6 +585,26 @@
                                         </div>
                                     </div>
                                 </section>
+
+
+
+
+                                <section id="hino" class="bg py-5 text-center">
+                                    <div class="container">
+                                        <h2 class="mb-4">Hino do Independente de Limeira</h2>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/gQ_dxsxLH44?si=6swC_DcaVADUrKX-"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </section>
+
+
+
 
 
 
